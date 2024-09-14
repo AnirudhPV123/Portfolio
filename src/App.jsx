@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
 import Footer from "./components/Footer/Footer";
+import ProjectDetails from "./components/Projects/ProjectDetails";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -43,14 +44,14 @@ function App() {
           <Wrapper>
             <Skills />
           </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Projects openModal={openModal} setOpenModal={setOpenModal} /> 
           <Wrapper>
             <Education />
           </Wrapper>
           <Footer />
-          {/* {openModal.state && (
+          {openModal.state && (
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          )} */}
+          )}
         </Body>
       </Router>
     </ThemeProvider>
